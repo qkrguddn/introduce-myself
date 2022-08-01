@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my introduce page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#mmain').css({ display: '' });
+            $('#ggrow').css({ display: 'none'});
+            $('#hhobby').css({ display: 'none' });
+            $('#wwant').css({ display: 'none' });
+           
+
+            $('#home').click(
+                function () { $('#mmain').css({ display: '' });});
+            $('#home').click(
+                function () { $('#ggrow').css({ display: 'none' }); });
+            $('#home').click(
+                function () { $('#hhobby').css({ display: 'none' }); });
+            $('#home').click(
+                function () { $('#wwant').css({ display: 'none' }); });
+             $('#home').click(
+                function () { 
+             $('#home').css("color","black");
+            $('#grow').css("color","gray");
+            $('#hobby').css("color","gray");
+            $('#want').css("color","gray");});
+
+            $('#grow').click(
+                function () { $('#ggrow').css({ display: '' }); });
+            $('#grow').click(
+                function () { $('#mmain').css({ display: 'none' }); });
+            $('#grow').click(
+                function () { $('#hhobby').css({ display: 'none' }); });
+            $('#grow').click(
+                function () { $('#wwant').css({ display: 'none' }); });
+            $('#grow').click(
+                function () { 
+                    $('#grow').css("color","black");
+                    $('#home').css("color","gray");
+            $('#hobby').css("color","gray");
+            $('#want').css("color","gray");});
+
+
+            $('#hobby').click(
+                function () { $('#hhobby').css({ display: '' }); });
+            $('#hobby').click(
+                function () { $('#mmain').css({ display: 'none' }); });
+            $('#hobby').click(
+                function () { $('#ggrow').css({ display: 'none' }); });
+            $('#hobby').click(
+                function () { $('#wwant').css({ display: 'none' });});
+                $('#hobby').click(
+                function () {
+                    $('#hobby').css("color","black");
+                    $('#home').css("color","gray");
+            $('#grow').css("color","gray");
+            $('#want').css("color","gray");});
+
+            $('#want').click(
+                function () { $('#wwant').css({ display: '' }); });
+            $('#want').click(
+                function () { $('#mmain').css({ display: 'none' }); });
+            $('#want').click(
+                function () { $('#ggrow').css({ display: 'none' }); });
+            $('#want').click(
+                function () { $('#hhobby').css({ display: 'none' }); });
+                $('#want').click(
+                function () {
+                    $('#want').css("color","black");
+                    $('#home').css("color","gray");
+            $('#grow').css("color","gray");
+            $('#hobby').css("color","gray");});
+            
+        });
+
+    </script>
+    <style>
+       /*main css*/
+       @media screen and (min-width: 1441px){
+            #mainnav { width: 100%; height: 250px; }
+        #title {float: left; font-size:5rem; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 50px; font-size:100px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:690px;}
+        .mainpic {float: left; width: 650px; height:650px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:80px; display: inline;}
+      section h1{font-size:5.2rem;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 500px; height: 500px;}
+         h2{font-size: 80px;}
+         }
+         @media screen and (max-width: 1440px){
+            #mainnav { width: 100%; height: 140px; }
+        #title {float: left; font-size:2.8rem; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 30px; font-size: 40px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:360px;}
+        .mainpic {float: left; width: 350px; height:350px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:40px; display: inline;}
+      section h1{font-size:2.5rem;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 260px; height: 260px;}
+         h2{font-size: 40px;}
+         }
+         @media screen and (max-width: 1024px){
+            #mainnav { width: 100%; height: 95px; }
+        #title {float: left; font-size:2.3rem; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 30px; font-size: 30px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:290px;}
+        .mainpic {float: left; width: 250px; height:250px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:30px; display: inline;}
+      section h1{font-size:2rem;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 230px; height: 230px;}
+         h2{font-size: 30px;}
+         }
+         @media screen and (max-width:768px){
+            #mainnav { width: 100%; height: 75px; }
+        #title {float: left; font-size:1.8rem; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 20px; font-size: 20px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:220px;}
+        .mainpic {float: left; width: 200px; height:200px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:24px; display: inline;}
+      section h1{font-size:1.5rem;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 180px; height: 180px;}
+         h2{font-size: 23px;}
+         }
+
+         @media screen and (max-width: 499px){
+            #mainnav { width: 100%; height: 75px; }
+        #title {float: left; font-size:1.3rem; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 10px; font-size: 11px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:150px;}
+        .mainpic {float: left; width: 140px; height:140px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:10px; display: inline;}
+      section h1{font-size:1.2rem;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 120px; height: 120px;}
+         h2{font-size: 18px;}
+         }
+         @media screen and (max-width: 310px){
+            #mainnav { width: 100%; height: 75px; }
+        #title {float: left; font-size:10px; margin-bottom:0;}
+        #navul li {display: inline; padding: 0 4px; font-size: 4px;}
+        #navul {float: right;}
+        #mainsection {width: 100%;height:150px; display: inline;}
+        .mainpic {float: left; width: 120px; height:120px;}
+        #profile {text-align: center;}
+        #profilelist li{font-size:5px; display: inline;}
+      section h1{font-size:3px;}
+        li{list-style: none;}
+        #maincontents {display: inline;}
+        .maintablepic {width: 100%;}
+         .mpic{width: 50px; height: 50px;}
+         h2{font-size: 5px;}
+         }
+
+        /*   grow css*/
+        @media screen and (min-width:1441px){
+        #growtitle { text-align: center; font-size:6.8rem; }
+        .growyear { width: 100%;height:800px; }
+        .growpic {float: left;margin-right:120px;width:500px; height: 500px;}
+        .growcontents { font-size:50px; }
+        .growyear h1{font-size:80px;}
+        }
+         @media screen and (max-width: 1440px){
+        #growtitle { text-align: center; font-size: 3.5rem; }
+        .growyear { width: 100%;height: 370px; }
+        .growpic {float: left;margin-right:80px;width:300px; height: 300px;}
+        .growcontents { font-size: 28px; }
+        .growyear h1{font-size:40px;}
+        }
+    @media screen and (max-width: 1024px){
+        #growtitle { text-align: center; font-size: 2.8rem; }
+        .growyear { width: 100%;height: 300px; }
+        .growpic {float: left;margin-right:50px;width:260px; height: 260px;}
+        .growcontents { font-size: 21px; }
+        .growyear h1{font-size:30px;}
+        }
+    @media screen and (max-width:768px){
+    #growtitle { font-size: 2.7rem;}
+        .growpic {float: left;margin-right: 20px;width:200px; height: 200px;}
+        .growcontents { font-size: 1rem; }
+        .growyear {display:inline-block; width: 100%;height: 260px; }
+        .growyear h1{font-size:25px;}
+        }
+        @media screen and (max-width: 499px){
+    #growtitle {      font-size: 2.3rem;}
+        .growpic {float: left; margin-right: 10px;width:130px; height: 130px; }
+        .growcontents { font-size: 12px;}
+        .growyear {display:inline-block; width: 100%; height: 190px; }  
+}
+
+        /*  hobby css*/
+        @media screen and (min-width:1441px){
+      #hobbytitle{text-align: center; font-size:6.5rem;}
+      #htitle{font-size:7.8rem;}
+      .tt{width:100%; height:980px; }
+      .tt h1{font-size:5rem;}
+        .hpic{float: left; margin-right:50px;width:600px; height:600px;}    
+    .hobbycontents { font-size:50px;
+    font-family: Verdana, Geneva, Arial, sans-serif;}   
+       }
+        @media screen and (max-width: 1440px){
+      #hobbytitle{text-align: center; font-size:3.3rem;}
+      #htitle{font-size:3.9rem;}
+      .tt{width:100%; height:470px; }
+      .tt h1{font-size:2.5rem;}
+        .hpic{float: left; margin-right:20px;width:300px; height:300px;}    
+    .hobbycontents { font-size: 32px;
+    font-family: Verdana, Geneva, Arial, sans-serif;}   
+       }
+        @media screen and (max-width: 1024px){
+      #hobbytitle{text-align: center; font-size: 2.7rem;}
+      #htitle{font-size:3rem;}
+      .tt{width:100%; height:390px; }
+      .tt h1{font-size:2rem;}
+        .hpic{float: left; margin-right:10px; width:250px; height:250px;}    
+    .hobbycontents { font-size: 23px;
+    font-family: Verdana, Geneva, Arial, sans-serif;}   
+       }
+       @media screen and (max-width:768px){
+        #hobbytitle{text-align: center;}
+        #htitle{font-size:1.3rem;}
+      .tt{width:100%; height:335px;}
+      .tt h1{font-size:1rem;}
+        .hpic{float: left; width:200px; height:200px;}  
+        .hobbycontents {font-size: 1rem;
+        font-family: Verdana, Geneva, Arial, sans-serif;}   
+       }
+       
+       @media screen and (max-width: 449px){
+        #hobbytitle{text-align: center; font-size: 1.2rem;}
+        #htitle{font-size:1rem;}
+      .tt{width:100%; height:300px;}
+      .tt h1{font-size:0.8rem;}
+        .hpic{float: left; width:130px; height:130px;}  
+        .hobbycontents {font-size: 13px;
+        font-family: Verdana, Geneva, Arial, sans-serif;}   
+       }
+       @media screen and (max-width:300px){
+        #hobbytitle{text-align: center; font-size:10px;}
+        #htitle{font-size:5px;}
+      .tt{width:100%; height:300px; display: inline;}
+      .tt h1{font-size:0.8rem;}
+        .hpic{float: left; width:80px; height:80px;}  
+        .hobbycontents {font-size: 4px;
+font-family: Verdana, Geneva, Arial, sans-serif;}       }
+        /*want to css*/
+        @media screen and (min-width:1441px){
+        #wanttitle{text-align: center; font-size:6rem;}
+      .exersize1{font-size:5rem;}
+       .wtitle{ width:100%;  height:900px;}
+       #wwant h1{font-size:6rem;}
+       .wantimg{float: left; margin-right:100px;width:600px; height:600px;}
+      .wantcontents{font-size:60px;
+     font-family: Verdana, Geneva, Arial, sans-serif;}
+         }
+         @media screen and (max-width:1440px){
+        #wanttitle{text-align: center; font-size:3.4rem;}
+      .exersize1{font-size:2.3rem;}
+       .wtitle{ width:100%;  height: 400px;}
+       #wwant h1{font-size: 3.3rem;}
+       .wantimg{float: left; margin-right:100px;width:300px; height:300px;}
+      .wantcontents{font-size:30px;
+        font-family: Verdana, Geneva, Arial, sans-serif;}
+         }
+           @media screen and (max-width:1024px){
+        #wanttitle{text-align: center; font-size: 2.5rem;}
+      .exersize1{font-size: 1.5rem;}
+       .wtitle{ width:100%;  height: 270px;}
+       #wwant h1{font-size: 3rem;}
+       .wantimg{float: left; margin-right:80px;width: 250px; height: 250px;}
+      .wantcontents{font-size: 20px;
+        font-family: Verdana, Geneva, Arial, sans-serif;}
+         }
+         @media screen and (max-width:768px){
+            #wanttitle{text-align: center; font-size:2rem;}
+            #wwant h1{font-size: 2rem;}
+      .exersize1{font-size: 1.3rem;}
+       .wtitle{ width:100%;  height:210px;}
+       .wantimg{float: left; margin-right:30px; width: 200px; height: 200px;}
+      .wantcontents{font-size: 1rem;
+        font-family: Verdana, Geneva, Arial, sans-serif;}
+      }
+
+         @media screen and (max-width: 499px){
+            #wanttitle{text-align: center; font-size: 1.5rem;}
+            #wwant h1{font-size: 1.5rem;}
+      .exersize1{font-size: 1rem;}
+       .wtitle{ width:100%;  height:140px;}
+       .wantimg{float: left; margin-right:30px; width: 130px; height: 130px;}
+      .wantcontents{font-size: 8px;
+        font-family: Verdana, Geneva, Arial, sans-serif;}    
+         }
+         @media screen and (max-width:310px){
+            #wanttitle{text-align: center; font-size: 1rem;}
+            #wwant h1{font-size: 1rem;}
+      .exersize1{font-size: 5px;}
+       .wtitle{ width:100%;  height:140px; display: inline;}
+       .wantimg{float: left; margin-right:10px; width: 60px; height: 60px;}
+      .wantcontents{font-size: 3px;
+        font-family: Verdana, Geneva, Arial, sans-serif;}
+         }
+        /* want to css */
+    </style>
+</head>
+<body>
+    <header id="mainnav">
+        <!--navigation-->
+        <h1 id="title">Park Hyoung Woo's introduction</h1>
+        <nav>
+            <ul id="navul">
+                <li id="home">home</li>
+                <li id="grow">growth process</li>
+                <li id="hobby">hobby</li>
+                <li id="want">want</li>
+            </ul>
+        </nav>
+    </header>
+    <!--home page-->
+    <div id="mmain">
+        <section id="mainsection">
+            <article> <img class="mainpic" src="homePicture/main.jpg" width="350" height="350"></article>
+            <article id="profile">
+                <h1 id="profiletitle">profile</h1>
+                <ul id="profilelist">
+                    <li>이름: 박형우</li><br>
+                    <li>생년월일: 1999.01.18</li><br>
+                    <li>취미: 웹툰 및 유튜브</li><br>
+                    <li>전공: 컴퓨터공학</li><br>
+                    <li>희망 분야: 웹개발</li>
+                </ul>
+            </article>
+
+        </section>
+        <section>
+            <h1>contents to introduction</h1>
+            <div id="maincontents">
+                <table class="maintablepic">
+                    <tr>
+                        <td>
+                            <li>
+                                <h2>growth process </h2>
+                            </li>
+                        </td>
+                        <td><img class="mpic"
+                                src="./homePicture/grow.jpg"
+                                width="200" height="200"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>
+                                <h2>hobby</h2>
+                            </li>
+                        </td>
+                        <td><img class="mpic"
+                                src="./homePicture/hobby.jpg"
+                                width="200" height="200"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li>
+                                <h2>want to</h2>
+                            </li>
+                        </td>
+                        <td><img class="mpic"
+                                src="./homePicture/want.png"
+                                width="200" height="200"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    <!--home page-->
+    <!--grow page-->
+    <div id="ggrow">
+        <!--growsection-->
+        <section id="growsection">
+            <article>
+                <p id="growtitle">growth</p>
+                <div class="growyear">
+                    <h1>유치원생</h1>
+                    <img class="growpic" src="growthPicture/유치원.jpg" width="250" height="250">
+                    <p class="growcontents">아무 생각 없이 놀기만 하던 어린 시절이다. 너무 어렸기에 기억 나는 것이 별로 없지만 몇 없는 기억들을 꺼내자면
+                        웃고 있었던 내 모습만 기억이 나는 것을 보니 행복했었던 것 같다.
+                    </p>
+                </div>
+                <div class="growyear">
+                    <h1>초등학생</h1>
+                    <img class="growpic" src="growthPicture/초등.png" width="250" height="250">
+                    <p class="growcontents">친구들과 동네에서 뛰어다니며 노는 기억이 대부분을 차지한다. 항상 친구들과 붙어 다니며 놀아 학교 가는 날도 기다려지고
+                        무엇을 하고 놀까 설레이던 날들의 연속이었다. 초등학생때와 유치원때는 걱정없이 마냥 행복하기만 했던 것 같은데 막상
+                        돌아갈 수 있다해도 가고 싶지는 않다. 크게 인상깊었던 일이 없어서 그런것 같다.
+                    </p>
+
+                </div>
+                <div class="growyear">
+                    <h1> 중학생</h1>
+                    <img class="growpic" src="growthPicture/중등.jpg" width="250" height="250">
+                    <p class="growcontents">과거로 돌아가고 싶다면 가장 돌아가고 싶은 순간이다. 지금까지 사는 동안 중 여러가지의 감정들을 가장 많이 느낀 시기이다.
+                        아침에 일어나서 교복을 입고 학교에 가면 왁자지껄 떠드는 친구들의 모습이 아직도 생생하게 기억이 난다. 이때를 떠올리면 행복하기도 하고
+                        뭉클하기도 하다. 돌아갈 수 없는 날들이지만 나에게 아름답고 행복한 추억으로 남은 것이 참 행복하다.
+                    </p>
+                </div>
+                <div class="growyear">
+                    <h1>고등학생</h1>
+                    <img class="growpic" src="growthPicture/고등.jpg" width="250" height="250">
+                    <p class="growcontents">처음으로 학원을 등록하고 공부를 시작한 시기이다. 이전까지 항상 놀기만 하고 공부는 비중이 아예 없었다.
+                        전교꼴지만 하다가 공부를 처음 하다보니 남들에 비해서 해야할 것이 많아 힘들었다. 고등학생때는 공부도 하고 친구들과 재미있게 잘 지냈던 것 같은데
+                        크게 기억이 남는 사건이 없다. 아마 매일이 비슷한 날들의 연속이라 그런것 같다. 그래도 초중고의 학창시절들을 떠올려보면 참 행복했던 것 같다.
+                    </p>
+                </div>
+                <div class="growyear">
+                    <h1> 대학생</h1>
+                    <img class="growpic"
+                        src="growthPicture/학교.png"
+                        width="250" height="250">
+                    <p class="growcontents">20살, 성인이 되어 들뜬 상태로 대학교에 들어가 전국에서 오는 여러 사람들을 만나 노는 것이 재밌었다.
+                        그래서 놀기만 하다보니 성적은 바닥을 쳤지만 성적보단 노는 것이 좋았다. 1학년때 실컷 놀았으니 남은 대학생활은 학업에 열중을 할 생각이다.
+                    </p>
+                </div>
+                <div class="growyear">
+                    <h1> 군입대</h1>
+                    <img class="growpic" src="growthPicture/군.jpg" width="250" height="250">
+                    <p class="growcontents">2019.1.21 해병대 병1242기로 입대하였다. 이 날은 살면서 절대 잊을 수 없을 날이라고 자신한다.
+                        훈병시절 반찬 조금이라도 더 받으면 행복해하던 모습과 이병시절 매일을 선임에게 혼나고 일병시절 모든 일을 나서서 다 도맡아야했다.
+                        운도 없어 11개월을 막내생활을 하였다. 병장이 되어서야 생활이 편해졌지만 하루하루가 시간이 안가 죽을 맛이었다.
+                        전역 후, 군시절을 떠올리면 그때 힘들었던 것들이 지금은 다 추억이 되었다. 나름 그곳안에서 재미있는 일들도 은근히 있었던 것 같다.
+                        그래도 절대 돌아가고 싶지 않은 순간이고 역시 민간인이 최고이다.
+                    </p>
+                </div>
+                <div class="growyear">
+                    <h1> 복학</h1>
+                    <img class="growpic"
+                        src="growthPicture/복학.jpg"
+                        width="250" height="250">
+                    <p class="growcontents">꿈에만 기다리던 전역을 하고 민간인이 되어 복학을 하게 되었다. 행복한 대학생활을 상상하며 복학을 하였지만
+                        예상치못한 코로나로 인하여 집에서만 지내는 대학생이 되었다. 밖에 나가 놀 수도 없는거 공부에 집중하고 있는 중이다.
+                        빠른 시일내에 코로나가 사라졌으면 하는 바람이다.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </div>
+    <!--growsction finish-->
+    <!--hobby start-->
+    <div id="hhobby">
+    <section>
+        <p id="hobbytitle">hobby</p>
+        <article id="travel">
+            <h1 id="htitle">여행</h1>
+            <div class="tt">
+                <h1>제주도</h1>
+                <img class="hpic" src="hobby/제주.jpg"
+                    width="250" height="250">
+                <img class="hpic"
+                    src="hobby/국수.jpg"
+                    width="250" height="250">
+                <p class="hobbycontents">
+                 나는 여행지로 제주도를 좋아한다. 예쁜 풍경을 가진 곳이 많은 것이 좋아하는 가장 큰 이유이다. 가만히 앉아 멍때리며 풍경을 바라보면 
+                 차분해지고 마음이 편안해지기 때문이다. 맛있는 음식이 있는 것도 좋아하는 이유 중 하나이다. 제주도에 가면 항상 먹는 것이 있다. 
+                 고기 국수와 고기비빔국수이다. 평소에 먹던 국수와 큰 차이는 모르겠지만 국수를 별로 좋아하지 않는 내가 여행갈 때마다 찾는 음식이다.
+                </p>
+            </div>
+            <div class="tt">
+                <h1>부산</h1>
+                <img class="hpic"
+                    src="hobby/부산.jpg" width="250"
+                    height="250">
+                <img class="hpic"
+                    src="hobby/국밥.jpg"
+                    width="250" height="250">
+                <p class="hobbycontents">
+                    부산은 많이 가보진 않았지만 동네에서 벗어나 어딘가로 여행을 가고싶을 때 주로 간다. 
+                    북적이는 많은 사람들과 많은 빌딩사이의 불빛, 그리고 바다풍경이 매력적이다. 
+                    또한 평소 좋아하는 음식이 순대국밥인데 부산의 순대국밥은 국물부터가 맛이 달라 낯설은 맛이라 더욱 끌렸다.
+                  얼른 코로나가 종식되고 여행을 가서 스트레스를 해소하고 싶다.
+                </p>
+            </div>
+        </article>
+        <article id="walk">
+            <h1 id="htitle"">산책</h1>
+            <div class="tt">
+                <h1>석촌호수</h1>
+                <img class="hpic"
+                    src="hobby/석촌호수.jpg"
+                    width="250" height="250">
+                <img class="hpic"
+                    src="hobby/석촌호수1.jpg"
+                    width="250" height="250">
+                <p class="hobbycontents">나는 예쁜 풍경을 보며 걷는 것을 좋아한다. 
+                    산책을 하면 복잡한 생각과 고민들이 하나씩 정리가 되기 때문이다.
+                  주로 석촌호수는 평일 저녁에 가는 것을 좋아한다. 석촌호수를 돌 때 옆에 보이는 롯데월드의 반짝이는 조명들과 시끌벅적한 소리가 
+                  나를 생동감넘치게 만들기 때문이다. 보통 40~50분이면 한바퀴를 도는데 다 돌고 버스틀 타고 창가에 앉아 바깥을 바라보며 집을 가면
+                  하루의 마무리가 행복하다.
+                </p>
+            </div>
+            <div class="tt">
+                <h1>한강</h1>
+                <img class="hpic"
+                    src="hobby/한강.jpg"
+                    width="250" height="250">
+                <img class="hpic" src="hobby/한강2.jpg" width="250"
+                    height="250">
+                <p class="hobbycontents">
+                   나는 한강으로 산책을 하러 가는 것을 좋아한다. 주로 한강은 주말 낮에 간다. 한강을 좋아하는 이유는 길을 따라 걸을 때 시원한 바람이 
+                    부는 것과 한강 건너에 강북부터 여의도까지 보이는 조그만 건물들이 빽빽하게 있는 것과 고층빌딩들이 수두룩하게 보이는 것이 
+                    좋기 때문이다. 또한 많은 사람들의 모습과 웃음소리를 들으면 나를 더욱 생기있게 만들어주어 좋아한다.
+                </p>
+            </div>
+        </article>
+        <article id="movie">
+            <h1 id="htitle"">영화</h1>
+            <div class="tt">                    
+                  <img class="hpic" src="hobby/영화1.jpg" width="250" height="250">
+                  <img class="hpic" src="hobby/영화2.jpg" width="250" height="250">    
+                  <img class="hpic" src="hobby/영화3.jpg" width="250" height="250">    
+                  <img class="hpic" src="hobby/영화4.png" width="250" height="250">    
+                  <img class="hpic" src="hobby/영화5.jpg" width="250" height="250">       
+             
+             <p class="hobbycontents">나는 영화를 좋아한다. 정확히 말하면 혼자 영화관에 가서 영화를 보는 것이 좋다. 사실 나는 영화를 보는 것보다
+                 더 좋아하는 시간은 좌석에 앉아 영화 시작전에 나오는 광고를 보는 것과 영화가 끝난 이후에 바로 일어나 나가지 않고 자리에 앉아 엔딩크레딧이 나오는 
+                 시간이다. 왜그런지는 아직도 모르겠지만 이 시간에 스크린을 보면 마음이 평온해진다. 좋아하는 영화장르는 로맨스, 액션, 코미디 등등 대부분 좋아하지만
+                 사극영화는 싫어한다. 원래 달에 2회씩은 영화를 봤지만 최근에는 학업에 따라가기 바빠 영화관을 갈 시간이 없어 못보고 있다. 위의 포스터는 내가 
+                 인상깊게 봤던 영화들 중에 일부이다.             
+             </p>
+             </div>
+            </article>
+    </section>
+    </div>
+    <div id="wwant"><!--want to start-->
+        <br>
+        <p id="wanttitle">i want to</p>
+        <h1>운동</h1>
+    <li class="exersize1"><b>주짓수</b></li>
+    <div class="wtitle">
+<tr>
+    <td> <img class="wantimg" src="want/주짓수.jpg" width="250" height="250"></td>
+    <td><p class="wantcontents">나는 운동을 좋아한다. 그래서 태권도, 권투, 킥복싱, 아르니스등의 운동을 배웠다.
+       그러다 한 영상을 우연히 보게 되었는데 체급 차이가 많이 나는 상대방을 타격기 없이 관절공격으로 제압하는 것이 참 인상깊었다.
+        내가 지금까지 배워온 운동은 타격기 위주이기에 호기심과 함께 배워보고 싶은 생각이 들었다. 그래서 주짓수를 배워 실력을 키우는 것이 목표이다.</p> </td>
+</tr>
+</div>
+    <li class="exersize1"><b>헬스</b></li>
+    <div class="wtitle">
+        <tr>
+            <td> <img class="wantimg" src="want/헬스.jpg" width="250" height="250"></td>
+            <td><p class="wantcontents">나는 여러 운동을 해봤지만 헬스는 해본적이 없었다. 근데 헬스유튜버들이 많이 생기면서 자연스럽게
+                몸이 좋은 사람들을 자주 보다보니 나도 몸을 가꾸고 싶은 욕심이 생겼다. 현재 그 욕심으로 7개월째 헬스를 하며 열심히 운동 중이다. 이제는 몸을 만드는
+                목적을 넘어 취미 생활이 되었다. 나의 목표는 꾸준히 하여 내년 여름에 바디 프로필을 찍는 것이다.
+
+            </p></td>
+        </tr>
+    </div>
+    <h1>여행</h1>
+    <div class="wtitle">
+    <tr>
+    <td> <img class="wantimg" src="want/여행.jpg" width="250" height="250"></td>
+    <td><p class="wantcontents"> 20살 전까지 굳이 멀리 놀러가고 싶은 생각이 없었다. 그래서 동네에서만 놀고 여행을 간 적이 별로 없다.
+         수능이 끝나고 친구와 처음으로 제주도를 갔는데 처음 느껴보는 특별한 감정이었고 여행에서 돌아온 후에도 잊혀지지가 않았다.
+         이 한 번의 여행으로 인해 나는 여행을 좋아하게 되었고 매년 제주도, 부산, 강릉 등등 국내의 여러곳을 여행하였다. 항상 국내만 가봤기에 전역 후 외국을 갈 계획을
+         짰지만 코로나로 인해서 가지 못하는 상황이 아쉽고 코로나가 끝나면 여행을 가서 신나게 놀고 싶다.
+
+    </p></td>
+</tr>
+</div>
+<h1>개발 공부</h1>
+<div class="wtitle">
+    <tr>
+<td> <img class="wantimg" src="want/개발.jpg" width="250" height="250"></td>
+<td><p class="wantcontents">공부를 좋아하는 사람은 매우 소수일 것이다. 물론 나도 공부하는 것을 좋아하지 않는다. 그렇기에 대학을 입학하고 신나게 놀기만 하다보니
+    1학년때의 성적은 아마 졸업할 때까지 받을 성적중 가장 낮을 것이라 확신한다. 그렇게 공부에 열정이 없다가 전역 후, 어떤 계기로 인해서 풀스택개발자가 되고 싶다는 
+    생각이 처음으로 들었다. 이때부터 공부를 좋아하게 된 것은 아니지만 공부를 하고 싶다는 생각이 들기 시작했다. 현재는 학업에 따라가기 바빠 개인공부를 하지 못하지만 
+    곧 있을 방학부터 본격적으로 시작할 것이다. 한 번도 해본 적 없는 것을 배울 생각에 설레이기도 하고 걱정되는 부분이 있지만 미래에 과거를 후회하는
+    일이 없도록 끝까지 최선을 다 할 생각이다.
+</p>
+</td>
+</tr>
+</div>
+    <!--want to finish-->
+</body>
+
+</html>
